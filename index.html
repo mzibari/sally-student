@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    <h1>Sally Student</h1>
+</header>
+
+<body>
+    <main id="application-root"></main>
+
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+    </script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js">
+    </script>
+    <script type="text/babel">
+
+        function App(props) {
+            console.log(props)
+            return (
+                <div>
+                <section>
+                    <h2>Education</h2>
+                    <ul>
+                        <li>Bachelor's Degree in Software Engineering MIT - 2010</li>
+                        <li>Associate's Degree in Computer Science TCC - 2005</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Work Experience</h2>
+                    <ul>
+                        <li>"05-2011 - Current" Junior Web Developer - IBM
+                            <p>Work in collaboration with team on client projects</p>
+                        </li>
+
+                        <li>"09-2006 - 05-2011" Computer Technician - FedEx 
+                            <p>Help resolve issues with customers devices</p> 
+                        </li>
+
+                        <li>"07-2000 - 09-2006" Receptionist - Mariot Hotel
+                            <p>Greet customers</p>
+                        </li>
+                        </ul>
+                </section>
+
+                <address>
+                <ul>
+                    <li>Sally Student </li>
+                    <li><a href="mailto:SStudent@thinkful.com?subject=Job%20Offer">Email: SStudent@thinkful.com</a></li>
+                    <li><a href="tel:6826826826">Phone: (682)-682-6826</a></li>
+                </ul>
+                <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt="Sally Student Portrait" />
+                </address>
+                </div>
+            );
+        }
+
+        ReactDOM.render(
+            // Add a className to the App
+            <App />,
+            document.querySelector('#application-root')
+        );
+    </script>
+</body>
+
+</html>
